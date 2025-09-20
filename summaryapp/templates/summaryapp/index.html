@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>논문/기사 요약 서비스</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/script.js' %}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>논문/기사 요약 서비스</h1>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <textarea id="article-text" placeholder="기사/논문 텍스트를 입력하세요..."></textarea>
+
+                <div class="input-icons">
+                    <label for="url-input" class="icon-btn">🌐</label>
+                    <input type="text" id="url-input" placeholder="URL 입력">
+
+                    <label for="file-input" class="icon-btn">📂</label>
+                    <input type="file" id="file-input" hidden>
+                </div>
+
+                <button id="summarize-btn">요약하기</button>
+            </section>
+
+            <hr>
+
+            <section class="output-section">
+                <h2>요약 결과</h2>
+                <div id="summary-box">
+                    요약 결과가 여기에 표시됩니다.
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
