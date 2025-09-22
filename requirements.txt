@@ -1,0 +1,20 @@
+#웹 프레임 워크
+Django==5.2.6
+sqlparse==0.5.3
+asgiref==3.9.1
+
+#요약/AI 모델 관련
+transformers==4.55.2
+torch==2.8.0
+torchaudio==2.8.0
+torchvision==0.21.0
+huggingface-hub==0.34.4
+tokenizers==0.21.4
+safetensors==0.6.2
+sentencepiece==0.2.1
+
+#데이터처리
+numpy==2.2.4
+pandas==2.2.3
+scikit-learn==1.7.0
+scipy==1.15.2
